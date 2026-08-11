@@ -1,0 +1,135 @@
+
+.navbar {
+  height: 70px;
+  width: 100%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #222;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search {
+  width: 400px;
+  height: 40px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  padding: 0 15px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  background: #f8f9fb;
+}
+
+.search:focus {
+  border-color: #6469ff;
+  background: white;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  background: transparent;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #333;
+
+  transition: all 0.2s ease;
+}
+
+.menu-button:hover {
+  background: #f1f2f6;
+
+  color: #6469ff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .search {
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .search {
+    width: 150px;
+  }
+
+}
