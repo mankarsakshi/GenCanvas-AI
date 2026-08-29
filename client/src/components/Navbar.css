@@ -1,0 +1,605 @@
+
+/* =========================================================
+   GENCANVASAI DASHBOARD NAVBAR
+========================================================= */
+
+.navbar {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(8, 8, 18, 0.92);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  backdrop-filter:
+    blur(18px);
+
+  -webkit-backdrop-filter:
+    blur(18px);
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.navbar-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-width: 210px;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+.menu-button {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  color: #aaaabd;
+
+  cursor: pointer;
+
+  transition:
+    0.25s ease;
+}
+
+
+.menu-button:hover {
+  color: #ffffff;
+
+  background:
+    rgba(139, 92, 246, 0.12);
+
+  border-color:
+    rgba(139, 92, 246, 0.3);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: white;
+
+  user-select: none;
+}
+
+
+.logo-icon {
+  width: 36px;
+
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6366f1
+    );
+
+  box-shadow:
+    0 5px 18px
+    rgba(99, 102, 241, 0.3);
+}
+
+
+.logo-text {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1px;
+}
+
+
+.logo-text span {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+
+.logo-text small {
+  font-size: 8px;
+
+  color: #696979;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-container {
+  width: 360px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  transition:
+    0.25s ease;
+}
+
+
+.search-container:focus-within {
+  border-color:
+    rgba(139, 92, 246, 0.4);
+
+  background:
+    rgba(139, 92, 246, 0.05);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(139, 92, 246, 0.05);
+}
+
+
+.search-icon {
+  flex-shrink: 0;
+
+  color: #666677;
+}
+
+
+.search {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 12px;
+}
+
+
+.search::placeholder {
+  color: #646474;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.nav-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 210px;
+
+  justify-content: flex-end;
+}
+
+
+/* =========================================================
+   NOTIFICATION
+========================================================= */
+
+.nav-icon-button {
+  position: relative;
+
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  color: #8c8c9c;
+
+  cursor: pointer;
+
+  transition:
+    0.2s ease;
+}
+
+
+.nav-icon-button:hover {
+  color: white;
+
+  background:
+    rgba(139, 92, 246, 0.1);
+
+  border-color:
+    rgba(139, 92, 246, 0.25);
+}
+
+
+.notification-dot {
+  position: absolute;
+
+  top: 7px;
+
+  right: 7px;
+
+  width: 5px;
+
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #a78bfa;
+
+  box-shadow:
+    0 0 8px
+    rgba(167, 139, 250, 0.9);
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 4px 7px;
+
+  border: 1px solid transparent;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition:
+    0.2s ease;
+}
+
+
+.profile-button:hover {
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border-color:
+    rgba(255, 255, 255, 0.06);
+}
+
+
+.profile-avatar {
+  width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  color: #c4b5fd;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.3),
+      rgba(99, 102, 241, 0.15)
+    );
+}
+
+
+.profile-details {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 1px;
+}
+
+
+.profile-name {
+  font-size: 11px;
+
+  font-weight: 650;
+}
+
+
+.profile-role {
+  color: #666677;
+
+  font-size: 9px;
+}
+
+
+.profile-chevron {
+  color: #656575;
+
+  transition:
+    transform 0.2s ease;
+}
+
+
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 220px;
+  background: rgba(18, 20, 36, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.15);
+  z-index: 1050;
+  animation: navDropdownFade 0.2s ease;
+}
+
+@keyframes navDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-user-info {
+  padding: 8px 10px 10px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 6px;
+}
+
+.dropdown-user-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+}
+
+.dropdown-user-email {
+  font-size: 11px;
+  color: #94a3b8;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+.dropdown-item:hover {
+  background: rgba(99, 102, 241, 0.15);
+  color: #ffffff;
+}
+
+.dropdown-item.logout {
+  color: #f87171;
+}
+
+.dropdown-item.logout:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .search-container {
+    width: 260px;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .navbar {
+    height: 64px;
+
+    padding:
+      0 15px;
+  }
+
+
+  .navbar-left {
+    min-width: auto;
+
+    gap: 9px;
+  }
+
+
+  .logo-text {
+    display: none;
+  }
+
+
+  .search-container {
+    width: auto;
+
+    flex: 1;
+
+    max-width: 300px;
+  }
+
+
+  .profile-details,
+  .profile-chevron {
+    display: none;
+  }
+
+
+  .nav-right {
+    min-width: auto;
+
+    gap: 6px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .navbar {
+    padding:
+      0 10px;
+  }
+
+
+  .search-container {
+    max-width: none;
+
+    margin-left: 5px;
+  }
+
+
+  .logo-icon {
+    width: 34px;
+
+    height: 34px;
+  }
+
+
+  .menu-button,
+  .nav-icon-button {
+    width: 36px;
+
+    height: 36px;
+  }
+
+
+  .profile-avatar {
+    width: 30px;
+
+    height: 30px;
+  }
+
+}

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+  }
+}
+
+.prompt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+
+/* =========================================================
+   GLOBAL DARK THEME ENGINE
+========================================================= */
+
+html.dark,
+[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+html.dark body,
+body.dark-theme,
+[data-theme="dark"] body {
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+/* Dark mode surfaces & cards */
+html.dark .bg-white,
+[data-theme="dark"] .bg-white {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark .bg-gray-50,
+[data-theme="dark"] .bg-gray-50 {
+  background-color: #162036 !important;
+}
+
+html.dark .bg-gray-100,
+[data-theme="dark"] .bg-gray-100 {
+  background-color: #1e293b !important;
+}
+
+/* Dark mode borders & dividers */
+html.dark .border-gray-200,
+html.dark .border-gray-100,
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-100 {
+  border-color: #1e293b !important;
+}
+
+html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+[data-theme="dark"] .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1e293b !important;
+}
+
+/* Dark mode typography */
+html.dark .text-gray-900,
+[data-theme="dark"] .text-gray-900 {
+  color: #f8fafc !important;
+}
+
+html.dark .text-gray-800,
+[data-theme="dark"] .text-gray-800 {
+  color: #f1f5f9 !important;
+}
+
+html.dark .text-gray-700,
+[data-theme="dark"] .text-gray-700 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-gray-600,
+[data-theme="dark"] .text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark .text-gray-500,
+[data-theme="dark"] .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+/* Dark mode form controls */
+html.dark input[type="text"],
+html.dark input[type="email"],
+html.dark input[type="password"],
+html.dark textarea,
+html.dark select,
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="password"],
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: #162036 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus,
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25) !important;
+}
+
+html.dark input:disabled,
+[data-theme="dark"] input:disabled {
+  background-color: #0b1120 !important;
+  color: #64748b !important;
+  border-color: #1e293b !important;
+}
+
+/* Dark mode hover states */
+html.dark .hover\:bg-gray-50:hover,
+[data-theme="dark"] .hover\:bg-gray-50:hover {
+  background-color: #162036 !important;
+}
+
+html.dark .hover\:bg-gray-100:hover,
+[data-theme="dark"] .hover\:bg-gray-100:hover {
+  background-color: #1e293b !important;
+}
+
+/* Danger zone in dark mode */
+html.dark .border-red-200,
+[data-theme="dark"] .border-red-200 {
+  border-color: rgba(239, 68, 68, 0.25) !important;
+}
+
+html.dark .bg-red-50,
+[data-theme="dark"] .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+html.dark .divide-red-100 > :not([hidden]) ~ :not([hidden]),
+[data-theme="dark"] .divide-red-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(239, 68, 68, 0.15) !important;
+}
